@@ -1,4 +1,4 @@
-#Peices
+# Pieces
 * `process.bash`
 * `core.less`
 * `external.less`
