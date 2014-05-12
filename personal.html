@@ -1,0 +1,182 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>*|MC:SUBJECT|*</title>
+
+  <style type="text/css">
+    /*////// RESET STYLES //////*/
+    body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+    table{border-collapse:collapse;}
+    img, a img{border:0; outline:none; text-decoration:none;}
+    h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+
+    /*////// CLIENT-SPECIFIC STYLES //////*/
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail/Outlook.com to display emails at full width. */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%;} /* Force Hotmail/Outlook.com to display line heights normally. */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up. */
+    #outlook a{padding:0;} /* Force Outlook 2007 and up to provide a "view in browser" message. */
+    img{-ms-interpolation-mode: bicubic;} /* Force IE to smoothly render resized images. */
+    body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
+
+    #templateBody {
+      padding:15px;
+    }
+
+    /*
+    @tab Body
+    @section body text
+    @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+    @theme main
+    */
+    .bodyContent{
+      /*@editable*/color:#333;
+      /*@editable*/font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+      /*@editable*/font-size:16px;
+      /*@editable*/line-height:170%;
+      text-align:left;
+      padding-bottom:5px;
+      width: 600px;
+    }
+
+    .footerContent{
+      color:#505050;
+      font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size:11px;
+      line-height:150%;
+      text-align:left;
+      padding-top:5px;
+      padding-bottom:5px;
+    }
+
+    a:link, a:visited, a .yshortcuts {
+      color:#26ABE2;
+      font-weight:normal;
+      text-decoration:underline;
+    }
+
+    .bodyContent img {
+      display:inline;
+      height:auto;
+      max-width:570px;
+    }
+
+    /*
+    @tab Page
+    @section heading 1
+    @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+    @style heading 1
+    */
+    h1{
+      /*@editable*/color:#404040;
+      display:block;
+      /*@editable*/font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+      /*@editable*/font-size:30px;
+      /*@editable*/font-style:normal;
+      /*@editable*/font-weight:200;
+      /*@editable*/line-height:125%;
+      /*@editable*/letter-spacing:normal;
+      margin-top:0;
+      margin-right:0;
+      margin-bottom:10px;
+      margin-left:0;
+      /*@editable*/text-align:left;
+    }
+
+    /*
+    @tab Page
+    @section heading 2
+    @tip Set the styling for all second-level headings in your emails.
+    @style heading 2
+    */
+    h2{
+      /*@editable*/color:#333333;
+      display:block;
+      /*@editable*/font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+      /*@editable*/font-size:20px;
+      /*@editable*/font-style:normal;
+      /*@editable*/font-weight:bold;
+      /*@editable*/line-height:125%;
+      /*@editable*/letter-spacing:normal;
+      margin-top:0;
+      margin-right:0;
+      margin-bottom:10px;
+      margin-left:0;
+      /*@editable*/text-align:left;
+    }
+
+    @media only screen and (max-width: 600px){
+      .bodyContent {
+        max-width:600px !important;
+        width:100% !important;
+      }
+
+      .bodyContent img {
+        height:auto !important;
+        max-width:600px !important;
+        width: 100%;
+        margin:0 auto;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+  <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" >
+      <tr>
+          <td align="left" valign="top">
+            <!-- // BEGIN BODY -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="left" valign="top" id="templateBody">
+<!-- start simple text area -->
+<div class="bodyContent" mc:edit="bodycontent">
+  <!-- conditionally show the first name -->
+  *|IF:FNAME|**|FNAME|*,*|ELSE:|*Hey There,*|END:IF|*<br/><br/>
+
+  This is a simple template that should be used to send a "personal looking" email from MailChimp. Keep it simple, clean buttons and simple images. Anything more complicated should be left to the more general template.<br/><br/>
+
+  You can customize the color, size, etc of the body font through the MailChimp styling area.<br/><br/>
+
+  <!-- solid green button -->
+  <div style="text-align:center">
+    <table style="border-collapse: collapse !important; display:inline-block">
+      <tbody>
+        <tr>
+          <td><a href="http://ascensionpress.com/" style="font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: #5cb85c; border-top: 12px solid #5cb85c; border-bottom: 12px solid #5cb85c; border-right: 18px solid #5cb85c; border-left: 18px solid #5cb85c; display: block;">Learn More About Awesomeness</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br/>
+  <!-- end solid green button -->
+
+  You might want to showcase a YouTube video. Maybe use some <b>bold</b> and <i>italic</i>.<br/><br/>
+
+  <!-- start centered linked image -->
+  <div style="text-align:center"><a href="https://www.youtube.com/watch?v=kmlIO3mBFVU" target="_blank"><img src="https://gallery.mailchimp.com/2438f5b8906cc79e7c55f3c68/images/kmlIO3mBFVU_play3b04ed.jpg" /></a></div><br/>
+  <!-- end centered linked image -->
+
+  <h1>You Can Still Use Headers</h1>
+  You can still use headers in this template. Don't use css to style them, use the MailChimp Designer.<br/><br/>
+
+  <h2>Here is a second header</h2>
+  A bit smaller and a bit bolder.<br/><br/>
+</div>
+<!-- end simple text area -->
+
+<!-- start footer -->
+<div class="footerContent" mc:edit="footer_utility">
+  <br/>
+  <a href="*|UPDATE_PROFILE|*">update your preferences</a> | <a href="*|UNSUB|*">unsubscribe from this list</a>&nbsp; 
+  <br/>*|LIST:ADDRESS|* | <a href="http://ascensionpress.com">visit website</a>
+</div>
+<!-- end footer -->
+                </td>
+              </tr>
+            </table>
+            <!-- END BODY \\ -->
+          </td>
+      </tr>
+  </table>
+</body>
+</html>

@@ -1,4 +1,21 @@
-My email development process has changes significantly since I created this repository. 
+# Templates
+
+I've boiled down my email needs into two templates:
+
+* **Personal** - used
+* **Generic** - composed of three main areas: 1) preheader 2) content area 3) footer. The content area has many types of content blocks:
+  * Simple text block
+  * Framed text
+  * 1/4 + 3/4 split
+  * 1/2 + 1/2 split
+  * 3/4 + 1/4 split
+  * Three column even split
+  * Three column even split, padded
+  * Three column even split, padded, with images
+  * RSS Notification
+  * RSS Digest
+
+# Services Used
 
 I use MailChimp and Mandrill as my Email Service Provider. The templates here work out of the box with those providers but could be easily modified to work with others.
 
