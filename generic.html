@@ -1,0 +1,952 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>*|MC:SUBJECT|*</title>
+    
+    <style type="text/css">
+      /* pulled from MC responsive templates */
+
+      /*////// RESET STYLES //////*/
+      body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+      table{border-collapse:collapse;}
+      img, a img{border:0; outline:none; text-decoration:none;}
+      h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+
+      /*////// CLIENT-SPECIFIC STYLES //////*/
+      .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail/Outlook.com to display emails at full width. */
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%;} /* Force Hotmail/Outlook.com to display line heights normally. */
+      table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up. */
+      #outlook a{padding:0;} /* Force Outlook 2007 and up to provide a "view in browser" message. */
+      img{-ms-interpolation-mode: bicubic;} /* Force IE to smoothly render resized images. */
+      body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
+
+    /* WordPress RSS Email Support
+     *****************************/
+
+     img.alignright {
+      float: right;
+      padding-left: 20px;
+     }
+
+     img.alignleft {
+      float:left;
+      padding-right: 20px;
+     }
+
+    /* Ascension Specific CSS
+     *****************************/
+
+    p{margin: 0 0 10px 0;}
+
+    #bodyTable{
+      height:100% !important;
+      margin:0;
+      padding:0;
+      width:100% !important;
+    }
+
+    .centeredTable td, .bodyContent .centeredTable td {
+      text-align: center;
+    }
+
+    .repeatedBlock {
+      margin-bottom: 35px;
+    }
+
+    /* ugly, but only way to deal with load ordering */
+    .textButtonLinks a:link,
+    .textButtonLinks a:visited,
+    .textButtonLinks a .yshortcuts,
+
+    .bodyContent .textButtonLinks a:link,
+    .bodyContent .textButtonLinks a:visited,
+    .bodyContent .textButtonLinks a .yshortcuts {
+      color:#65b0e6;
+      font-weight:bold;
+      text-transform:uppercase;
+      font-size:15px;
+      font-family:Helvetica, Arial, sans-serif;
+      text-decoration:none;
+      letter-spacing:1px;
+      display:inline-block;
+    }
+
+    .informational_box {
+      font-size:16px;
+      line-height:24px;
+      margin-bottom:10px;
+      padding:10px 15px;
+
+      font-family:Helvetica, Arial, sans-serif;
+
+      text-align:center;
+      background-color:#f2f2f2;
+      border:1px solid #ddd;
+
+      -webkit-border-radius:3px;
+      -moz-border-radius:3px;
+      border-radius:5px;
+    }
+
+    .bodyContent .blockquote {
+      font-family: Georgia, serif;
+      padding-left: 15px;
+      font-style: italic;
+    }
+
+    .bodyContent cite {
+      display: block;
+      text-align: right;
+      font-weight: bold;
+      font-style: normal;
+    }
+
+/*
+  @tab Page
+  @section heading 1
+  @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+  @style heading 1
+  */
+    h1{
+      /*@editable*/color:#404040;
+      display:block;
+      /*@editable*/font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+      /*@editable*/font-size:30px;
+      /*@editable*/font-style:normal;
+      /*@editable*/font-weight:200;
+      /*@editable*/line-height:125%;
+      /*@editable*/letter-spacing:normal;
+      margin-top:0;
+      margin-right:0;
+      margin-bottom:10px;
+      margin-left:0;
+      /*@editable*/text-align:left;
+    }
+  /*
+  @tab Page
+  @section heading 2
+  @tip Set the styling for all second-level headings in your emails.
+  @style heading 2
+  */
+    h2{
+      /*@editable*/color:#333333;
+      display:block;
+      /*@editable*/font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+      /*@editable*/font-size:20px;
+      /*@editable*/font-style:normal;
+      /*@editable*/font-weight:normal;
+      /*@editable*/line-height:125%;
+      /*@editable*/letter-spacing:normal;
+      margin-top:0;
+      margin-right:0;
+      margin-bottom:10px;
+      margin-left:0;
+      /*@editable*/text-align:left;
+    }
+  /*
+  @tab Page
+  @section heading 3
+  @tip Set the styling for all third-level headings in your emails.
+  @style heading 3
+  */
+    h3{
+      /*@editable*/color:#606060;
+      display:block;
+      /*@editable*/font-family:Arial;
+      /*@editable*/font-size:16px;
+      /*@editable*/font-style:normal;
+      /*@editable*/font-weight:bold;
+      /*@editable*/line-height:125%;
+      /*@editable*/letter-spacing:normal;
+      margin-top:0;
+      margin-right:0;
+      margin-bottom:10px;
+      margin-left:0;
+      /*@editable*/text-align:left;
+    }
+  /*
+  @tab Page
+  @section heading 4
+  @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+  @style heading 4
+  */
+    h4{
+      /*@editable*/color:#808080;
+      display:block;
+      /*@editable*/font-family:Arial;
+      /*@editable*/font-size:12px;
+      /*@editable*/font-style:normal;
+      /*@editable*/font-weight:bold;
+      /*@editable*/line-height:100%;
+      /*@editable*/letter-spacing:normal;
+      margin-top:0;
+      margin-right:0;
+      margin-bottom:10px;
+      margin-left:0;
+      /*@editable*/text-align:left;
+    }
+  /*
+  @tab Header
+  @section preheader style
+  @tip Set the background color and bottom border for your email's preheader area.
+  @theme page
+  */
+    #templatePreheader{
+      /*@editable*/background-color:#f4f4f4;
+      /*@editable*/border-bottom:1px solid #e7e7e7;
+    }
+  /*
+  @tab Header
+  @section preheader text
+  @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+  */
+    .preheaderContent{
+      /*@editable*/color:#262626;
+      /*@editable*/font-family:Helvetica, Arial, sans-serif;
+      /*@editable*/font-size:11px;
+      /*@editable*/line-height:125%;
+      /*@editable*/text-align:left;
+    }
+  /*
+  @tab Header
+  @section preheader link
+  @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+  */
+    .preheaderContent a:link,.preheaderContent a:visited,.preheaderContent a .yshortcuts{
+      /*@editable*/color:black;
+      /*@editable*/font-weight:normal;
+      /*@editable*/text-decoration:underline;
+    }
+  /*
+  @tab Header
+  @section header style
+  @tip Set the background color and border for your email's header area.
+  @theme header
+  */
+    #templateHeader{
+      /*@editable*/background-color:#FFFFFF;
+      /*@editable*/border-top:0;
+      /*@editable*/border-bottom:0;
+    }
+  /*
+  @tab Header
+  @section header text
+  @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+  */
+    .headerContent{
+      /*@editable*/color:#505050;
+      /*@editable*/font-family:Helvetica, Arial, sans-serif;
+      /*@editable*/font-size:20px;
+      /*@editable*/font-weight:bold;
+      /*@editable*/line-height:100%;
+      /*@editable*/padding-top:20px;
+      /*@editable*/padding-right:0;
+      /*@editable*/padding-bottom:0px;
+      /*@editable*/padding-left:0;
+      /*@editable*/text-align:left;
+      /*@editable*/vertical-align:middle;
+    }
+  /*
+  @tab Header
+  @section header link
+  @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+  */
+    .headerContent a:link,.headerContent a:visited,.headerContent a .yshortcuts{
+      /*@editable*/color:#26ABE2;
+      /*@editable*/font-weight:normal;
+      /*@editable*/text-decoration:underline;
+    }
+  /*
+  @tab Body
+  @section body style
+  @tip Set the background color for your email's body area.
+  */
+    #templateBody{
+      /*@editable*/background-color:#FFFFFF;
+      /*@editable*/border-top:0;
+      /*@editable*/border-bottom:0;
+      padding:20px;
+    }
+  /*
+  @tab Body
+  @section body text
+  @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+  @theme main
+  */
+    .bodyContent, .bodyContent p, .bodyContent td, .bodyContent div {
+      /*@editable*/color:#262626;
+      /*@editable*/font-family:Helvetica, Lucida Grande, sans-serif;
+      /*@editable*/font-size:15px;
+      /*@editable*/line-height:150%;
+      /*@editable*/text-align:left;
+    }
+  /*
+  @tab Body
+  @section body link
+  @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+  */
+    .bodyContent a:link,.bodyContent a:visited,.bodyContent a .yshortcuts{
+      /*@editable*/color:#26ABE2;
+      /*@editable*/font-weight:normal;
+      /*@editable*/text-decoration:underline;
+    }
+    .bodyContent img{
+      display:inline;
+      height:auto;
+      max-width:600px;
+    }
+  /*
+  @tab Footer
+  @section footer style
+  @tip Set the top border for your email's footer area.
+  @theme footer
+  */
+    #templateFooter{
+      /*@editable*/border-top:0;
+      padding:20px;
+    }
+  /*
+  @tab Footer
+  @section footer style
+  @tip Set the top border for your email's footer area.
+  @theme footer
+  */
+    body,#bodyTable{
+      /*@editable*/background-color:#F4F4F4;
+    }
+  /*
+  @tab Footer
+  @section footer text
+  @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+  @theme footer
+  */
+    .footerContent{
+      /*@editable*/color:#808080;
+      /*@editable*/font-family:Helvetica, Lucida Grande, sans-serif;
+      /*@editable*/font-size:13px;
+      /*@editable*/line-height:1.5;
+      /*@editable*/text-align:left;
+    }
+  /*
+  @tab Footer
+  @section footer link
+  @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+  */
+    .footerContent a:link,.footerContent a:visited,.footerContent a .yshortcuts{
+      /*@editable*/color:#606060;
+      /*@editable*/font-weight:normal;
+      /*@editable*/text-decoration:underline;
+    }
+    .footerContent img{
+      display:inline;
+    }
+
+@media only screen and (max-width: 480px){
+  body,table,td,p,a,li,blockquote{
+    -webkit-text-size-adjust:none !important;
+}
+
+} @media only screen and (max-width: 480px){
+    body{
+      width:100% !important;
+      min-width:100% !important;
+    }
+
+} @media only screen and (max-width: 480px){
+    td[id=templateBody],td[id=templateFooter]{
+      padding-right:10px !important;
+      padding-left:10px !important;
+    }
+
+} @media only screen and (max-width: 480px){
+  /*
+  @tab Mobile Styles
+  @section template width
+  @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work, set width to 300px instead.
+  */
+    table[class=templateContainer]{
+      /*@tab Mobile Styles
+@section template width
+@tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work, set width to 300px instead.*/max-width:600px !important;
+      /*@editable*/width:100% !important;
+    }
+
+} @media only screen and (max-width: 480px){
+    table[id=templatePreheader]{
+      display:none;
+    }
+
+} @media only screen and (max-width: 480px){
+  /*
+  @tab Mobile Styles
+  @section heading 1
+  @tip Make the first-level headings larger in size for better readability on small screens.
+  */
+    h1{
+      /*@editable*/font-size:28px !important;
+      /*@editable*/line-height:1.25 !important;
+    }
+
+} @media only screen and (max-width: 480px){
+  /*
+  @tab Mobile Styles
+  @section heading 2
+  @tip Make the second-level headings larger in size for better readability on small screens.
+  */
+    h2{
+      /*@editable*/font-size:24px !important;
+      /*@editable*/line-height:1.25 !important;
+    }
+
+} @media only screen and (max-width: 480px){
+  /*
+  @tab Mobile Styles
+  @section heading 3
+  @tip Make the third-level headings larger in size for better readability on small screens.
+  */
+    h3{
+      /*@editable*/font-size:20px !important;
+      /*@editable*/line-height:1.25!important;
+    }
+
+} @media only screen and (max-width: 480px){
+  /*
+  @tab Mobile Styles
+  @section heading 4
+  @tip Make the fourth-level headings larger in size for better readability on small screens.
+  */
+    h4{
+      /*@editable*/font-size:16px !important;
+      /*@editable*/line-height:100% !important;
+    }
+
+} @media only screen and (max-width: 480px){
+  /*
+  @tab Mobile Styles
+  @section header image
+  @tip Make the main header image fluid for portrait or landscape view adaptability. If a fluid layout doesn't work, set width to 300px or half-size instead.
+  */
+    img[id=headerImage]{
+      /*@tab Mobile Styles
+@section header image
+@tip Make the main header image fluid for portrait or landscape view adaptability. If a fluid layout doesn't work, set width to 300px or half-size instead.*/height:auto !important;
+      /*@editable*/max-width:100% !important;
+      /*@editable*/width:100% !important;
+    }
+
+} @media only screen and (max-width: 480px){
+  /*
+  @tab Mobile Styles
+  @section header text
+  @tip Make the header content text larger in size for better readability on small screens.
+  */
+    .headerContent{
+      /*@editable*/font-size:21px !important;
+      /*@editable*/line-height:150% !important;
+      /*@editable*/padding-top:20px !important;
+      /*@editable*/padding-right:10px !important;
+      /*@editable*/padding-bottom:0px !important;
+      /*@editable*/padding-left:10px !important;
+    }
+
+} @media only screen and (max-width: 480px){
+  /*
+  @tab Mobile Styles
+  @section body text
+  @tip Make the body content text larger in size for better readability on small screens.
+  */
+    .bodyContent{
+      /*@editable*/font-size:17px !important;
+      /*@editable*/line-height:150% !important;
+    }
+
+} @media only screen and (max-width: 480px){
+  /*
+  @tab Mobile Styles
+  @section footer text
+  @tip Make the footer content text larger in size for better readability on small screens.
+  */
+    .footerContent{
+      /*@editable*/font-size:13px !important;
+      /*@editable*/line-height:150% !important;
+    }
+
+}
+
+/* Ascension Specific Mobile Styles
+ *****************************/
+
+@media only screen and (max-width: 480px) {
+  .headerContent img,.bodyContent img{
+    height:auto !important;
+    max-width:100% !important;
+  }
+
+  /* center images on mobile by default; need important to override inline css */
+  .bodyContent img {
+    margin:0 auto !important;
+    display: block !important;
+  }
+
+  .mobileTable {
+    width:100%;
+  }
+
+  .mobileTable td,
+  .mobileTableLeft td {
+    display:block !important;
+    clear:both !important;
+    width:100% !important;
+    margin:0;
+  }
+
+  .mobileTable td {
+    text-align:left !important;
+    margin-bottom:10px;
+  }
+
+  /* declare this again in the MQ to override inline css */
+  .mobileTable.centeredTable td {
+    text-align: center !important;
+  }
+
+  .textButtonLinks a {
+    margin-bottom:10px;
+  }
+
+  .bodyContent .desktopOnly, .desktopOnly {
+    display:none !important;
+  }
+
+  .repeatedBlock {
+    margin-bottom: 20px;
+  }
+
+  td[class=footerContent] a{
+    display:block !important;
+  }
+
+  /* for wordpress */
+  img.alignright, img.alignleft {
+   float: none !important;
+   display: block;
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+   padding-top:10px !important;
+   padding-bottom:10px !important;
+  }
+}
+</style>
+</head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+      <center>
+          <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" >
+              <tr>
+                  <td align="center" valign="top">
+                      <!-- // BEGIN PREHEADER -->
+                        <table border="0" cellpadding="10" cellspacing="0" width="100%" id="templatePreheader">
+                          <tr>
+                              <td align="center" valign="top">
+                                  <table border="0" cellpadding="0" cellspacing="0" width="600">
+                                      <tr>
+                                          <td valign="top" align="left" class="preheaderContent" mc:edit="preheader_content">
+                                              A snippet that people will see in the preview line of their email client
+                                            </td>
+                                            <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                                            <td valign="top" width="220" class="preheaderContent" style="padding-left:20px;" mc:edit="preheader_links">
+                                                Email not displaying correctly?<br><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                                            </td>
+                                            <!-- *|END:IF|* -->
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- END PREHEADER \\ -->
+
+                        <!-- // BEGIN TEMPLATE SECTIONS -->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center" valign="top">
+                              <!-- // BEGIN BODY -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  <td align="center" valign="top" id="templateBody">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="600" class="templateContainer">
+                                      <tr>
+                                        <td valign="top" class="bodyContent">
+
+                                          <!-- start events header -->
+                                          <table border="0" cellpadding="0" cellspacing="0" class="mobileTable repeatedBlock" width="600" mc:repeatable="content_row" mc:variant="event menu">
+                                            <tr>
+                                              <td>
+                                                <a href="http://biblestudyforcatholics.com/" target="_blank" style="display:block"><img src="http://placehold.it/200x145" id="campaign-icon" mc:edit="header_image" mc:allowdesigner mc:allowtext></a>
+                                              </td>
+                                              <td width="380" class='centeredTable desktopOnly' mc:edit="header_content">
+                                                <h1 style="text-align:center; margin-bottom:25px !important;">An Awesome Title</h1>
+                                                <table class="textButtonLinks" width="380" style="border:1px solid #ddd; border-width:1px 0;">
+                                                  <tr>
+                                                    <td style="padding:10px 0"><a target="_blank" href="http://cliffsidemedia.com/">Website</a></td>
+                                                    <td style="padding:10px 0"><a target="_blank" href="http://cliffsidemedia.com/">Store</a></td>
+                                                    <td style="padding:10px 0"><a target="_blank" href="http://cliffsidemedia.com/">Events</a></td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <!-- end events header -->
+
+                                          <!-- Start 1 column content block center -->
+                                          <div class="repeatedBlock" mc:repeatable="content_row" mc:variant="basic text block">
+                                            <div mc:edit="content_row_center">
+                                              <div style="text-align:center"><img src="http://placehold.it/600x160"></div>
+
+                                              <br/><br/>
+                                              <h1 style="text-align: center">Hello. This Header is <b>Big</b> and <i>Modern</i>.</h1>
+                                              The above image is less than 600px and is centered using CSS. For best results use a <b>600px image with gothic-sans style font</b>. Example below (watch this image on mobile, it dissapears because of a CSS class).
+                                              <br/><br/>
+
+                                              <div class='desktopOnly'><img src="http://www.ledbury.com/system/assets/html_newsletters/short_run_november_b/Short-Run-November.jpg" /><br/><br/></div>
+
+                                              If you don't like the sans-serif modern header above, you could do something more traditional looking. Don't <b>do it in CSS</b>, use the MailChimp template editor to change header fonts and colors.
+                                              <br/><br/>
+
+                                              <!-- // solid centered green button -->
+                                              <div style="text-align:center">
+                                                <table style="border-collapse: collapse !important; display:inline-block">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td><a href="http://cliffsidemedia.com/" style="font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: #5cb85c; border-top: 12px solid #5cb85c; border-bottom: 12px solid #5cb85c; border-right: 18px solid #5cb85c; border-left: 18px solid #5cb85c; display: block;">This is a Centered Button</a></td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                              <br/>
+                                              <!-- end solid centered green button \\ -->
+
+
+                                              <h1 style="font-family:'New York',Georgia,serif; font-weight: normal">This is Classy. <span style="color:#FF851B">This</span> <span style="color:#FF4136">is Super</span> <span style="color:#2980b9">Funky</span></h1>
+                                              Finding good colors can be a pain. Here are two resources you can use for clean, fresh, good looking colors: <a href="http://flatuicolors.com" target="_blank">flat UI colors</a> and the <a href="http://clrs.cc" target="_blank">web color palette</a>. To learn more about what font stacks you can use in mobile email, <a href="http://templates.mailchimp.com/design/typography/">check out this resource</a>
+
+                                              <br/><br/>
+
+                                              <!-- // start centered blue border button -->
+                                              <div style="text-align:center">
+                                                <table style="border-collapse: collapse !important; display:inline-block">
+                                                  <tr><td>
+                                                    <a href="http://cliffsidemedia.com/" style="background-color:none;border:2px solid #428bca;border-radius:4px;color:#428bca;font-family: Helvetica, Arial, sans-serif;font-size: 16px; line-height: 16px;text-decoration:none;padding: 9px 13px; display: block">A Centered Blue Button &rarr;</a>
+                                                  </td></tr>
+                                                </table>
+                                              </div>
+                                              <!-- end centered blue border button // -->
+
+                                            </div>
+                                          </div>
+                                          <!-- End 1 column content block center -->
+
+                                          <!-- Start 2/3 left aligned table -->
+                                          <table border="0" cellpadding="0" cellspacing="0" class="mobileTable repeatedBlock" width="600" mc:repeatable="content_row" mc:variant="two thirds left">
+                                            <tr>
+                                              <td width="200" style="width:200px" valign="top" mc:edit="2_3_left_1">
+                                                <img src="http://placehold.it/200x250" />
+                                              </td>
+                                              <td width="400" valign="top" mc:edit="2_3_left_2">
+                                                <h2>Blockquotes. Don't use the tag.</h2>
+                                                Yes, we can do blockquotes. No, you can't use the standard tag as some email clients override the styles with their default
+                                                quote level styles.<br/><br/>
+                                                <div class='blockquote'>"Wine is constant proof that God loves us and loves to see us happy."<cite>Benjamin Franklin</cite></div>
+
+                                                <!-- // start blue border button -->
+                                                <table style="border-collapse: collapse !important"><tr><td>
+                                                <a href="http://cliffsidemedia.com/" style="background-color:none;border:2px solid #428bca;border-radius:4px;color:#428bca;font-family: Helvetica, Arial, sans-serif;font-size: 16px; line-height: 16px;text-decoration:none;padding: 9px 13px; display: block">Learn More &rarr;</a>
+                                                </td></tr>
+                                                </table>
+                                                <!-- end blue border button // -->
+                                                
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <!-- End 2/3 left aligned table -->
+
+                                          <!-- Start 2/3 right aligned table -->
+                                          <table border="0" cellpadding="0" cellspacing="0" class="mobileTable repeatedBlock" width="600" mc:repeatable="content_row" mc:variant="two thirds right">
+                                            <tr>
+                                              <td width="400" valign="top" mc:edit="2_3_right_1">
+                                                <h2>We Have Notification Blocks</h2>
+                                                You can use the "informational_box" to style divs to call out specific blocks of text. Check out the source code for examples on how to customize the colors.<br/><br/>
+
+                                                <!-- info box -->
+                                                <div class='informational_box'>
+                                                  Hey, Check this out! <a href="http://cliffsidemedia.com/">Boo!</a>
+                                                </div>
+
+                                                <div class='informational_box' style="background-color:#ed4121; border-color: #c3351b !important; color: white; font-size: 18px">
+                                                  Hey There. You can customize the color of the box using CSS. Check out the source code. Make sure to change this text!
+                                                </div>
+                                                <!-- end info box -->
+                                              </td>
+                                              <td width="200" style="width:200px; text-align:center" valign="top" align="center" mc:edit="2_3_right_2">
+                                                <img src="http://placehold.it/200x250" />
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <!-- End 2/3 right aligned table -->
+
+                                          <!-- Start framed content -->
+                                          <table border="0" cellpadding="0" cellspacing="0" class="mobileTable repeatedBlock" width="600" mc:repeatable="content_row" mc:variant="center framed text">
+                                            <tr>
+                                              <td class="desktopOnly" width="100">&nbsp;</td>
+                                              <td width="400" valign="top" mc:edit="full_frame_content">
+                                                <h2>Change Their Preferences</h2>
+                                                We want people to change their preferences instead of opting out of a list. Here is a sample line<br/><br/>
+
+                                                <div style="text-align:center"><b>Too many emails?</b> <a href="*|UPDATE_PROFILE|*">Change your email preferences.</a></div>
+                                                <br/>
+
+                                                <!-- green border button -->
+                                                <table style="border-collapse: collapse !important"><tr><td>
+                                                <a href="http://cliffsidemedia.com/" style="background-color:none;border:2px solid #27ae60;border-radius:4px;color:#27ae60;font-family: Helvetica, Arial, sans-serif;font-size: 16px; line-height: 16px;text-decoration:none;padding: 9px 13px; display: block">Learn More &rarr;</a>
+                                                </td></tr>
+                                                </table>
+                                                <!-- end green border button -->
+                                              </td>
+                                              <td class="desktopOnly" width="100">&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                          <!-- End framed content -->
+
+                                          <!-- Start half and half aligned table -->
+                                          <table border="0" cellpadding="0" cellspacing="0" class="mobileTable repeatedBlock" width="600" mc:repeatable="content_row" mc:variant="half and half">
+                                            <tr>
+                                              <td width="300" valign="top" mc:edit="2_2_right_1">
+                                                <h2>Column 1</h2>
+                                                Some text for column 1<br/><br/>
+
+                                                <!-- solid blue button -->
+                                                <table style="border-collapse: collapse !important">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td><a href="http://cliffsidemedia.com/" style="font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: #428bca; border-top: 12px solid #428bca; border-bottom: 12px solid #428bca; border-right: 18px solid #428bca; border-left: 18px solid #428bca; display: block;">Hey What&#39;s Up &rarr;</a></td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- end solid blue button -->
+                                              </td>
+                                              <td width="200" style="width:300px" valign="top" mc:edit="2_2_right_2">
+                                                <h2>Column 2</h2>
+                                                Some text for column 2<br/><br/>
+                                                <!-- solid green button -->
+                                                <table style="border-collapse: collapse !important">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td><a href="http://cliffsidemedia.com/" style="font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: #5cb85c; border-top: 12px solid #5cb85c; border-bottom: 12px solid #5cb85c; border-right: 18px solid #5cb85c; border-left: 18px solid #5cb85c; display: block;">Hey What&#39;s Up &rarr;</a></td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- end solid green button -->
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <!-- End half and half aligned table -->
+
+                                          <!-- Start three column -->
+                                          <table border="0" cellpadding="0" cellspacing="0" class="mobileTable repeatedBlock" width="600" mc:repeatable="content_row" mc:variant="three column">
+                                            <tr>
+                                              <td width="200" style="width:200px" valign="top" mc:edit="3_right_1">
+                                                <h2>Column 1</h2>
+                                                Some text for column 1. 200px
+                                              </td>
+                                              <td width="200" style="width:200px" valign="top" mc:edit="3_right_2">
+                                                <h2>Column 2</h2>
+                                                Some text for column 2. 200px
+                                              </td>
+                                              <td width="200" style="width:200px" valign="top" mc:edit="3_right_3">
+                                                <h2>Column 3</h2>
+                                                Some text for column 3. 200px
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <!-- End three column -->
+
+
+                                          <!-- Start three column padded -->
+                                          <table border="0" cellpadding="0" cellspacing="0" class="mobileTable repeatedBlock" width="600" mc:repeatable="content_row" mc:variant="three column padded">
+                                            <tr>
+                                              <td width="185" style="width:185px" valign="top" mc:edit="p_3_right_1">
+                                                <h2>Column 1</h2>
+                                                Some text for column 1. 185px
+                                              </td>
+                                              <td class="desktopOnly" width="15">&nbsp;</td>
+                                              <td width="185" style="width:185px" valign="top" mc:edit="p_3_right_2">
+                                                <h2>Column 2</h2>
+                                                Some text for column 2. 185px
+                                              </td>
+                                              <td class="desktopOnly" width="15">&nbsp;</td>
+                                              <td width="185" style="width:185px" valign="top" mc:edit="p_3_right_3">
+                                                <h2>Column 3</h2>
+                                                Some text for column 3. 185px
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <!-- End three column padded -->
+
+                                          <!-- Start three column padded & centered-->
+                                          <table border="0" cellpadding="0" cellspacing="0" class="mobileTable centeredTable repeatedBlock" width="600" mc:repeatable="content_row" mc:variant="three column centered, padded, with images">
+                                            <tr>
+                                              <td width="185" style="width:185px" valign="top" mc:edit="pc_3_right_1">
+                                                <div style="text-align:center"><a href="http://cliffsidemedia.com/" target="_blank"><img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" /></a></div><br/>
+                                                This is on sale for <span style="color: #fa441d; font-weight:bold">$100.00</span><br/>
+                                                <a href="#">Learn More</a>
+                                              </td>
+                                              <td class="desktopOnly" width="15">&nbsp;</td>
+                                              <td width="185" style="width:185px" valign="top" mc:edit="pc_3_right_2">
+                                                <div style="text-align:center"><a href="http://cliffsidemedia.com/" target="_blank"><img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" /></a></div><br/>
+                                                This is on sale for <span style="color: #fa441d; font-weight:bold">$100.00</span><br/>
+                                                <a href="#">Learn More</a>
+                                              </td>
+                                              <td class="desktopOnly" width="15">&nbsp;</td>
+                                              <td width="185" style="width:185px" valign="top" mc:edit="pc_3_right_3">
+                                                <div style="text-align:center"><a href="http://cliffsidemedia.com/" target="_blank"><img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" /></a></div><br/>
+                                                This is on sale for <span style="color: #fa441d; font-weight:bold">$100.00</span><br/>
+                                                <a href="#">Learn More</a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <!-- End three column padded -->
+
+                                          <!-- // start rss digest with images -->
+                                          <div width="600" mc:repeatable="content_row" mc:variant="RSS digest">
+                                            *|RSSITEMS:|*
+
+                                            <!-- Start 2/3 left aligned table -->
+                                            <table border="0" cellpadding="0" cellspacing="0" class="mobileTable repeatedBlock" width="600">
+                                              <tr>
+                                                <td width="200" style="width:200px" valign="top" class='desktopOnly' mc:edit="rss_1_3_right">
+                                                  <p><a href="*|RSSITEM:URL|*">*|RSSITEM:IMAGE|*</a></p>
+                                                  <div style="text-align:center"><i>by *|RSSITEM:AUTHOR|*</i></div>
+                                                </td>
+                                                <td width="400" valign="top" mc:edit="rss_2_3_right">
+                                                  <h2>*|RSSITEM:TITLE|*</h2>
+                                                  <p>*|RSSITEM:CONTENT_TEXT|*</p>
+
+                                                  <!-- // start blue border button -->
+                                                  <table style="border-collapse: collapse !important"><tr><td>
+                                                  <a href="*|RSSITEM:URL|*#disqus_thread" style="background-color:none;border:2px solid #428bca;border-radius:4px;color:#428bca;font-family: Helvetica, Arial, sans-serif;font-size: 16px; line-height: 16px;text-decoration:none;padding: 9px 13px; display: block">Continue Reading</a>
+                                                  </td></tr>
+                                                  </table>
+                                                  <!-- end blue border button // -->
+                                                  
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!-- End 2/3 left aligned table -->
+
+                                            *|END:RSSITEMS|*
+                                          </div>
+                                          <!-- end rss digest without images \\ -->
+
+                                          <!-- // start rss single -->
+                                          <div width="600" mc:repeatable="content_row" mc:variant="RSS single">
+                                            *|RSSITEMS:|*
+                                            
+                                            <h1>*|RSSITEM:TITLE|*</h1>
+                                            <p><i>by *|RSSITEM:AUTHOR|*</i></p>
+                                            *|RSSITEM:CONTENT_FULL|*
+
+                                            <!-- Start Green CTA -->
+                                            <table style="border-collapse: collapse !important">
+                                              <tbody>
+                                                <tr>
+                                                  <td><a href="*|RSSITEM:URL|*#disqus_thread" style="font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: #5cb85c; border-top: 12px solid #5cb85c; border-bottom: 12px solid #5cb85c; border-right: 18px solid #5cb85c; border-left: 18px solid #5cb85c; display: block;">Join the Discussion &rarr;</a></td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <!-- End Green CTA -->
+
+                                            *|END:RSSITEMS|*
+                                          </div>
+                                          <!-- end rss single \\ -->
+                                        </td>
+                                      </tr>
+                                      
+                                      <!-- Start Social -->
+                                      <tr mc:hideable>
+                                        <td>
+                                          <table class="mobileTable centeredTable textButtonLinks" width="600">
+                                            <tr><td colspan="3" mc:edit="share_text"><h2 style="text-align:center">Spread the Word</h2></td></tr>
+                                            <tr>
+                                              <td width="200" style="width:200px"><a href="https://www.facebook.com/sharer.php?u=*|URL:ARCHIVE|*" target="_blank">Share on Facebook</a></td>
+                                              <td width="200" style="width:200px"><a href="http://twitter.com/home?status=*|URL:ARCHIVE|*" target="_blank">Share on Twitter</a></td>
+                                              <td width="200" style="width:200px"><a href="*|FORWARD|*" target="_blank">Forward to a Friend</a></td>
+                                            </tr>
+                                          </table>  
+                                        </td>
+                                      </tr>
+                                      <!-- End Social -->
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- END BODY \\ -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top">
+                              <!-- // BEGIN FOOTER -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="600" class="templateContainer">
+                                <tr>
+                                  <td align="center" valign="top" id="templateFooter">
+                                    <table border="0" cellpadding="0" cellspacing="0"class="mobileTable" mc:repeatable="footer_type" mc:variant="fancy">
+                                      <tr>
+                                        <td valign="top"class="footerContent" style="padding-top:20px; padding-bottom:20px;" mc:edit="footer_content">
+                                          <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+                                          <br>
+                                          *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+                                          <br>
+                                          <br>
+                                          <strong>Our mailing address is:</strong>
+                                          <br>
+                                          *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
+                                        </td>
+                                        <td valign="middle" class="footerContent" mc:edit="footer_logo">
+                                          <a href="http://cliffsidemedia.com/" target="_blank"><img src="http://placehold.it/200x100" /></a>
+                                          <br>
+                                          <div style="text-align:center">
+                                            <b>Follow Us!</b><br>
+                                            <a href="http://twitter.com/mike_bianco" target="_blank" title="Follow us on Twitter">Twitter</a>
+                                            <span class="desktopOnly">&bull;</span>
+                                            <a href="http://www.youtube.com/user/" target="_blank" title="Follow us on YouTube">YouTube</a>
+                                            <span class="desktopOnly">&bull;</span>
+                                            <a href="https://www.facebook.com/pages/" target="_blank" title="Follow us on Facebook">Facebook</a>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="2" valign="top" class="footerContent" style="padding-bottom:20px;" mc:edit="footer_utility">
+                                          <a href="*|UPDATE_PROFILE|*">Update Your Preferences</a> <span class="desktopOnly">|</span> 
+                                          <a href="*|UNSUB|*">Unsubscribe *|EMAIL|* from <i>*|LIST:NAME|*</i></a>
+                                        </td>
+                                      </tr>
+                                    </table>
+
+                                    <div class="footerContent" style="text-align:center" mc:repeatable="footer_type" mc:variant="simple">
+                                      <a href="*|UPDATE_PROFILE|*">manage your subscriptions</a> <span class="desktopOnly">|</span> 
+                                      <a href="*|UNSUB|*">unsubscribe *|EMAIL|* from <i>*|LIST:NAME|*</i></a>
+                                      <br/>
+                                      *|LIST:ADDRESS|*
+                                    </div>
+                                  </td>
+                              </tr>
+                            </table>
+                            <!-- END FOOTER \\ -->
+                          </td>
+                        </tr>
+                        </table>
+                        <!-- END TEMPLATE SECTIONS \\ -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
