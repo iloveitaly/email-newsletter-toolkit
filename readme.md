@@ -29,7 +29,7 @@ Some great resources for getting inspired.
 * http://campaignmonitor.com/gallery/
 * http://dribbble.com/tags/email
 * http://htmlemailgallery.com/
-
+* http://www.mailcharts.com/email-marketing-ideas
 
 ## Development
 ### Resources
