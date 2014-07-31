@@ -847,7 +847,7 @@
                                           <!-- end rss digest without images \\ -->
 
                                           <!-- // start rss single -->
-                                          <div width="600" mc:repeatable="content_row" mc:variant="RSS single">
+                                          <div width="600" mc:edit="rss_single" mc:repeatable="content_row" mc:variant="RSS single">
                                             *|RSSITEMS:|*
                                             
                                             <h1>*|RSSITEM:TITLE|*</h1>
@@ -930,7 +930,7 @@
                                       </tr>
                                     </table>
 
-                                    <div class="footerContent" style="text-align:center" mc:repeatable="footer_type" mc:variant="simple">
+                                    <div class="footerContent" style="text-align:center" mc:edit="footer_content" mc:repeatable="footer_type" mc:variant="simple">
                                       <a href="*|UPDATE_PROFILE|*">manage your subscriptions</a> <span class="desktopOnly">|</span> 
                                       <a href="*|UNSUB|*">unsubscribe *|EMAIL|* from <i>*|LIST:NAME|*</i></a>
                                       <br/>
